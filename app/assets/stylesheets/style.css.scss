@@ -1,3 +1,9 @@
+@import "foundation";
 body{
 	background: image-url("bg1.png");
+  #contenedor{
+    @include grid-row;
+    max-width: 74.94em;
+    background: image-url("bg.png");
+  }
 }
