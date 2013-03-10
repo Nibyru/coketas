@@ -1,4 +1,9 @@
 header
-  = link_to root_path do
-    = image_tag ('logo.png')
-  end
+  = link_to root_path , :class => "logo" do
+    h1 coketas
+  form.login
+    label Usuario:
+    input type="text"
+    label Contraseña:
+    input type="password"
+    input type="submit" value="+"
