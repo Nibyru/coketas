@@ -1,11 +1,38 @@
 header{
 	height: 11.79em;
-  img {
-    overflow: hidden;
-    border: none;
+  a.logo {
+    height: 100%;
+    width: 31%;
+    display: block;
+    h1{
+      background: image-url("logo.png") no-repeat;
+      background-size: 100%;
+      position: relative;
+      color: transparent;
+      left: 0.4em;
+      top: -0.3em;
+      width: 91.5%;
+      height: 100%;
+    }
+  }
+  .login {
+    background: rgba(0, 0, 0, 0.05);
+    float: right;
     position: relative;
-    left: 1.19em;
-    top: -0.4em;
-    height: 131%;
+    top: -105%;
+    padding: 1%;
+    height: 25%;
+    width: 44.5%;
+    padding-left: 1.7%;
+    input, label{
+      display: inline-block;
+      margin-left: 1%;
+    }
+    input{  width: 28%;  }
+    input[type="submit"]{  width: 5%;  }
+    label{
+      width: auto;
+      text-align: right;
+    }
   }
 }
