@@ -1,0 +1,30 @@
+.menu{
+  ul{
+    list-style: none;
+    width: 15em;
+    height: 18.2em;
+    margin-top: -0.2em;
+    background: rgba(0, 0, 0, 0.05);
+    text-indent: 2.6em;
+    li{
+      border-bottom: 0.045em solid white;
+      height: 25%;
+      color: #fff;
+      font-size: 2.5em;
+      font-weight: bold;
+    }
+  }
+}
+.social{
+  text-indent: 1em;
+  a{
+    font-size: 2.4em;
+    color: #000;
+  }
+  .face{
+    font-size: 2.6em;
+  }
+  a:hover{
+    color: #FCB6FA;
+  }
+}
