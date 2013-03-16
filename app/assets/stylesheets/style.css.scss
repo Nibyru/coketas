@@ -7,3 +7,26 @@ body{
     background: image-url("bg.png");
   }
 }
+.orbit-bullets, .orbit-slide-number, .orbit-timer{  display: none;  }
+
+nav, section{
+   display: inline-block;
+   border: 2px solid red;
+}
+
+nav{
+   width:15em;
+   float:left;
+}
+
+section{
+   position: relative;
+   width: 55em;
+   top: -4.5em;
+   left: 3em;
+   .slide{
+      ul{
+         list-style: none;
+      }
+   }
+}

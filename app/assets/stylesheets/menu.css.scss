@@ -4,7 +4,7 @@
     width: 15em;
     height: 18.2em;
     margin-top: -0.2em;
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.1);
     text-indent: 2.6em;
     li{
       border-bottom: 0.045em solid white;
@@ -41,5 +41,3 @@
     color: #FCB6FA;
   }
 }
-
-.orbit-bullets, .orbit-slide-number, .orbit-timer{  display: none;  }
