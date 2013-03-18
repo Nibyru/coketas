@@ -30,7 +30,11 @@
 
 <script>
   $(window).load(function() {
-    $('#slider').orbit();
+    $('#slider').orbit({
+      animation: 'horizontal-push',
+      captions: false,
+      bullets: false
+      });
   });
 </script>
 </html>
