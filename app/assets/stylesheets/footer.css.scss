@@ -1,9 +1,29 @@
 footer{
-   background: image-url("foot.png");
-   height: 20em;
-   h1{
-      position: relative;
-      right: -27em;
-      bottom: -7em;
-   }
+  background: image-url("foot.png");
+  height: 19em;
+  position:relative;
+  a{
+    h1,img{
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      bottom: 0em;
+      right: 0em;
+      color: #000;
+    }
+    img{
+      max-width: 15%;
+      border: none;
+      right: 1em;
+    }
+    h1{
+      margin-bottom: 0em!important;
+      margin-right: 1em;
+      font-weight: bold;
+      font-size: 1em;
+      right: 12em;
+      bottom: 1.5em; 
+    }
+  }
 }

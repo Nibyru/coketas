@@ -20,6 +20,10 @@ section{
    position: relative;
    width: 59.8em;
    top: -4.5em;
+   .orbit-wrapper {
+      width: 80% !important;
+      margin: auto;
+    }
    #slider{
       width: 45em;
       margin:auto;
@@ -36,7 +40,7 @@ section{
   }
   .slider-nav{
     span.right, span.left {
-      background: image-url("orbit/right-arrow.png") no-repeat;
+      background: image-url("right-arrow.png") no-repeat;
       background-size: 100%;
       width: 5em;
     }
