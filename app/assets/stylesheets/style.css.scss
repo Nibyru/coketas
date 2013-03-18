@@ -37,6 +37,7 @@ section{
   .orbit {
     width: 87% !important;
     margin: auto;
+    box-shadow: 0px 0px 25px;
   }
   .slider-nav{
     span.right, span.left {
@@ -51,5 +52,15 @@ section{
       -ms-transform: scaleX(-1);
       transform: scaleX(-1);
     }
+  }
+  .carousel-caption {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 30%;
+    padding: 2%;
+    color: white;
   }
 }
