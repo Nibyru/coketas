@@ -29,7 +29,10 @@ header{
       margin-left: 1%;
     }
     input{  width: 28%;  }
-    input[type="submit"]{  width: 5%;  }
+    input[type="submit"]{
+      width: 5%;
+      padding: 0.25em 0.5em;
+    }
     label{
       width: auto;
       text-align: right;

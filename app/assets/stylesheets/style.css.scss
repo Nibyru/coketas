@@ -1,11 +1,10 @@
-@import "foundation";
 body{
 	background: image-url("bg1.png");
-  #contenedor{
-    @include grid-row;
+  .container{
     max-width: 74.94em;
     background: image-url("bg.png");
   }
+  a, a:visited, a:hover, a:active{  text-decoration: none;  }
 }
 .orbit-bullets, .orbit-slide-number, .orbit-timer{  display: none;  }
 
