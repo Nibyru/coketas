@@ -44,6 +44,8 @@ section{
       background: image-url("right-arrow.png") no-repeat;
       background-size: 100%;
       width: 5em;
+      color: transparent;
+      text-indent: 0px;
     }
     span.left{
       -webkit-transform: scaleX(-1);
