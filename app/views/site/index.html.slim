@@ -2,10 +2,31 @@ nav
   = render "shared/menu"
 
 section
-   .slide
-      ul data-orbit=""
-        li = image_tag("00.jpg")
-        li = image_tag("01.jpg")
-        li = image_tag("02.jpg")
-        li = image_tag("03.jpg")
-        li = image_tag("04.jpg")
+   #slider
+     = image_tag("00.jpg")
+     = image_tag("01.jpg")
+     = image_tag("02.jpg")
+     = image_tag("03.jpg")
+     = image_tag("04.jpg")
+
+#exampleSlider
+  .callout
+    h1 Content Slide
+    p
+      | This slide has HTML content instead of an image and has also had
+      code.inline .callout
+      | applied to it.
+    p
+      a.success.button href="#"
+  .warning.callout
+    h1 Another Content Slide
+    p
+      | This slide has HTML content instead of an image and has also had
+      code.inline .warning.callout
+      | applied to it.
+    p
+      a.large.button href="#"
+javascript:
+  | $(window).load(function() {
+    | $('#exampleSlider').orbit();
+  | });
