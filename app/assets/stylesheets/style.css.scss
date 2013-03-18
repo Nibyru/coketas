@@ -6,7 +6,6 @@ body{
   }
   a, a:visited, a:hover, a:active{  text-decoration: none;  }
 }
-.orbit-bullets, .orbit-slide-number, .orbit-timer{  display: none;  }
 
 nav, section{
    display: inline-block;
@@ -29,7 +28,24 @@ section{
       }
    }
 }
-.orbit-container span {   
-   border-color: transparent!important;
-   width:1em;
+
+.orbit-wrapper{
+  .orbit {
+    width: 87% !important;
+    margin: auto;
+  }
+  .slider-nav{
+    span.right, span.left {
+      background: image-url("orbit/right-arrow.png") no-repeat;
+      background-size: 100%;
+      width: 5em;
+    }
+    span.left{
+      -webkit-transform: scaleX(-1);
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+      transform: scaleX(-1);
+    }
+  }
 }
