@@ -160,7 +160,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   jquery-rails
   meta_search (>= 1.1.0.pre)
-  pg
+  pg (~> 0.14.1)
   rails (= 3.2.12)
   rails-i18n
   sass-rails (~> 3.2.3)
