@@ -22,23 +22,42 @@
     }
   }  
 }
+
 .menu:hover{
   text-shadow: 0px 0px 5px #0d1a3a;
 }
 .menu a:hover li{
-    color: #000;
-    text-shadow: 0px 0px 1px #fff;
+  color: #000;
+  text-shadow: 0px 0px 1px #fff;
 }
+
 .social{
-  text-indent: 1em;
-  a{
-    font-size: 2.4em;
-    color: #000;
+  margin-top: 1.2em;
+  .face, .gplus, .twitter{
+    display: inline-block;
+    margin-left: 1.9em;
   }
-  .face{
-    font-size: 2.6em;
+  a{
+    color:#333;
+    font-size: 2.4em;
   }
   a:hover{
-    color: #FCB6FA;
+    color:#FCB6FA;
+  }
+  .face{
+    a{font-size:2.6em;}
   }
 }
+
+
+
+
+  // margin-top: 1.2em;
+  // text-indent: 1em;
+  // a{
+  //   font-size: 2.4em;
+  //   color: #000;
+  // }
+  // a:hover{
+  //   color: #FCB6FA;
+  // }

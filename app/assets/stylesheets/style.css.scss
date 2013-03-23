@@ -18,8 +18,9 @@ nav{
 
 section{
   position: relative;
-  width: 71.55%;
-  top: -4.5em;
+  width: 73%;
+  height: 32em; /* <-- BORRAR*/
+  top: -3.5em;
   margin-left: 3%;
   .orbit-wrapper {
     margin: auto;
@@ -34,16 +35,18 @@ section{
 }
 
 .orbit-wrapper{
+  width: 96% !important;
   .orbit {
     width: 87% !important;
     margin: auto;
-    box-shadow: 0px 0px 25px;
+    box-shadow: -7px 7px 70px #bbb;
   }
   .slider-nav{
     span.right, span.left {
       background: image-url("right-arrow.png") no-repeat;
       background-size: 100%;
-      width: 5em;
+      width: 70em;
+      font-size: 1px;
       color: transparent;
       text-indent: 0px;
     }

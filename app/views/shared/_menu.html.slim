@@ -1,18 +1,25 @@
 .menu
   ul
     a
-      li Inicio
+      = link_to root_path do
+        li Inicio
     a
-      li Catálogo
+      = link_to catalogo_path do
+        li Catálogo
     a
-      li Stock
+      = link_to stock_path do
+        li Stock
     a
-      li Contacto
+      = link_to contacto_path do
+        li Contacto
 
 .social
-  a.face
-    i.icon-facebook
-  a.gplus  
-    i.icon-google-plus
-  a.twitter  
-    i.icon-twitter
+  .face
+    a href="http://www.facebook.es"
+      i.icon-facebook
+  .gplus
+    a href="http://www.gmail.com"
+      i.icon-google-plus
+  .twitter
+    a href="http://www.twitter.com"
+      i.icon-twitter

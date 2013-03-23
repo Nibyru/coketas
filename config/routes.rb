@@ -1,7 +1,9 @@
 Coketas::Application.routes.draw do
 
   root :to => 'site#index'
-  
+  get 'catalogo', :to => 'site#catalogo'
+  get 'stock', :to => 'site#stock'
+  get 'contacto', :to => 'site#contacto'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
