@@ -1,5 +1,9 @@
 Coketas::Application.routes.draw do
 
+  ActiveAdmin.routes(self)
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
   root :to => 'site#index'
   get 'catalogo', :to => 'site#catalogo'
   get 'stock', :to => 'site#stock'
