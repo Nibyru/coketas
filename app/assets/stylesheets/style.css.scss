@@ -26,6 +26,7 @@ section{
     margin: auto;
   }
   #slider{
+    border-radius:10px;
     width: 45em;
     margin:auto;
     ul{
@@ -89,19 +90,31 @@ section{
     font-weight: bold;
   }
   label, input, textarea{
-    // text-align:right;
     margin-top: 1em;
     margin-left: 2.4em;
     display: inline-block;
   }
   label{
+    border:2px solid blue;
     font-weight: bold;
     color: #868686;
-    width: 30%;
+    width: 20%;
     font-size: 1.1em;
   }
   input,textarea{
-    width: 50%;
+    width: 60%;
+  }
+  input[type="submit"]{
+
+    background: -webkit-linear-gradient(top,#fff 30%, #d4d4d4 70%);
+    background: -moz-linear-gradient(top,#fff 30%, #d4d4d4 70%);
+    background: -o-linear-gradient(top,#fff 30%, #d4d4d4 70%);
+    background: -ms-linear-gradient(top,#fff 30%, #d4d4d4 70%);
+    border: 0.1em solid #000;
+    height:2em;
+    width:88.5%;
+    color: #000;
+    font-weight: normal;
   }
 }
 
