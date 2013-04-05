@@ -2,6 +2,9 @@ nav
   = render "shared/menu"
 
 section
-  = link_to do
+  = link_to asset_path("01.jpg"), :rel=>"lightbox-catalogo" do
   	= image_tag("01.jpg")
-  end
+  = link_to asset_path("02.jpg"), :rel=>"lightbox-catalogo" do
+  	= image_tag("02.jpg")
+  = link_to asset_path("03.jpg"), :rel=>"lightbox-catalogo" do
+  	= image_tag("03.jpg")
