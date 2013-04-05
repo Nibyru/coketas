@@ -80,7 +80,6 @@ section{
 
 .contacto{
   width: 60%;
-  border: 3px solid red;
   margin-left: 6em;
   h1{
     text-align:right;
@@ -94,18 +93,18 @@ section{
   }
   label, input, textarea{
     margin-top: 1em;
-    margin-left: 2.4em;
     display: inline-block;
   }
   label{
-    border:2px solid blue;
+    margin-left: 2.4em;
     font-weight: bold;
     color: #868686;
     width: 20%;
     font-size: 1.1em;
+    vertical-align:top;
   }
   input,textarea{
-    width: 60%;
+    width: 70%;
   }
   input[type="submit"]{
 
@@ -115,13 +114,13 @@ section{
     background: -ms-linear-gradient(top,#fff 30%, #d4d4d4 70%);
     border: 0.1em solid #000;
     height:2em;
-    width:88.5%;
+    width:91%;
     color: #000;
     font-weight: normal;
+    margin-left: 2.4em;
   }
 }
 
 .deco{
   float: right;
-  border:3px solid green;
 }

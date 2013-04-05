@@ -22,9 +22,8 @@
       transition: all 0.3s ease-in-out;
     }
     li:hover{
-      width: 103%;
-      box-shadow: 1px 0px 5px #000;
-      border-bottom: 0;
+      width: 102%;
+      background: rgba(0, 0, 0, 0.05);
     }
   }
 }
