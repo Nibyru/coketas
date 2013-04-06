@@ -2,9 +2,11 @@ nav
   = render "shared/menu"
 
 section
-  = link_to asset_path("01.jpg"), :rel=>"lightbox-catalogo" do
+  = link_to asset_path("01.jpg"), :rel=>"lightbox-catalogo", :title => "te parto" do
   	= image_tag("01.jpg", :size => "100x85")
   = link_to asset_path("02.jpg"), :rel=>"lightbox-catalogo" do
   	= image_tag("02.jpg", :size => "100x85")
   = link_to asset_path("03.jpg"), :rel=>"lightbox-catalogo" do
-  	= image_tag("03.jpg", :size => "100x85")
+    = image_tag("03.jpg", :size => "100x85")
+  = link_to asset_path("04.jpg"), :rel=>"lightbox-catalogo" do
+  	= image_tag("04.jpg", :size => "100x85")
