@@ -20,18 +20,26 @@ header{
     float: right;
     position: relative;
     top: -105%;
-    padding: 1%;
+    padding: 1.1%;
     height: 25%;
     width: 45.5%;
-    padding-left: 1.7%;
     input, label{
       display: inline-block;
       margin-left: 1%;
+      vertical-align: middle;
     }
-    input{  width: 28%;  }
+    input{  
+      width: 28%;
+      height: 1.7em;
+    }
     input[type="submit"]{
-      width: 5%;
-      padding: 0.25em 0.5em;
+      width: 6%;
+      padding: 0em;
+      background: #000;
+      height: 0.9em;
+      border: 1px solid black;
+      line-height: 0.9em;
+      font-size: 2em;
     }
     label{
       width: auto;
