@@ -67,14 +67,14 @@ Coketas::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
   config.action_mailer.default_url_options = { :host => 'prueba-coketas.herokuapp.com' }
-  config.action_mailer.smtp_settings = {
-    :enable_starttls_auto => true,
-    :address => 'smtp.gmail.com',
-    :port => 587,
-    :authentication => :plain,
-    :domain => 'Coketas.com.ar',
-    :user_name => 'sarriagada87@gmail.com',
-    :password => 'soymuyfeliz'
+  config.action_mailer.smtp_settings = {  
+    :address              => "smtp.gmail.com",  
+    :port                 => 587,  
+    :domain               => "prueba-coketas.herokuapp.com",  
+    :user_name            => "sarriagada87",  
+    :password             => "soymuyfeliz",  
+    :authentication       => "plain",  
+    :enable_starttls_auto => true  
   }
   config.action_mailer.delivery_method = :smtp
 end
