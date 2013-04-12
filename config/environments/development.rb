@@ -1,6 +1,15 @@
 Coketas::Application.configure do
-
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.smtp_settings = {
+    :enable_starttls_auto => true,
+    :address => 'smtp.gmail.com',
+    :port => 587,
+    :authentication => :plain,
+    :domain => 'Coketas.com.ar',
+    :user_name => 'sergio@nibyru.com',
+    :password => 'meisner1051'
+  }
+  config.action_mailer.delivery_method = :smtp
 
   config.cache_classes = false
 
