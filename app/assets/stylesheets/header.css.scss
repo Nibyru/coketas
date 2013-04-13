@@ -16,6 +16,7 @@ header{
     }
   }
   .login {
+    display: none;
     background: rgba(0, 0, 0, 0.1);
     float: right;
     position: relative;
@@ -35,7 +36,8 @@ header{
     input[type="submit"]{
       width: 6%;
       padding: 0em;
-      background: #000;
+      background: image-url("submit.png");
+      background-size:100%;
       height: 0.9em;
       border: 1px solid black;
       line-height: 0.9em;
