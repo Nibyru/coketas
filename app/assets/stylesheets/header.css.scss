@@ -34,14 +34,10 @@ header{
       height: 1.7em;
     }
     input[type="submit"]{
-      width: 6%;
-      padding: 0em;
-      background: image-url("submit.png");
-      background-size:100%;
+      width: 0.9em;
+      background: #000 image-url("icono.png");
       height: 0.9em;
-      border: 1px solid black;
-      line-height: 0.9em;
-      font-size: 2em;
+      background-position: -12px -114px;
     }
     label{
       width: auto;
