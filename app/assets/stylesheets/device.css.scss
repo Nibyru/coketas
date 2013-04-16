@@ -1,0 +1,53 @@
+//tablet style
+@media (max-width: 939px){
+	.menu ul{ text-indent: 10%; }
+	.social{
+	  a{ margin-left: 0.5em; }
+	}
+	footer a img { max-width: 16%; }
+	// Catálogo
+	.lista_marcas span{	display: none; }
+	.lista_fotos img { width: 45.6%; }
+	// Contacto
+	.contacto {
+		width: 80%;
+		margin-left: 3em;
+	}
+	.deco{ display:none; }
+}
+//mobile style
+@media (max-width: 767px){
+	nav, section{ display:block; }
+	section{
+		margin-top: 4em;
+	}
+	.menu{
+		ul{
+			height: 14em;
+			margin-top: -10em;
+			text-align: center;
+			.stock{
+				display: none;
+			}
+			li{ 
+				text-indent: 0%;
+				line-height: 1.7em;
+				font-size: 2em;
+			}
+		}
+	}
+	.social{
+		margin-top: -4em;
+		text-align: center;
+	}
+	// Contacto
+	.contacto{
+		width: 127%;
+		margin-left: 0;
+		label{ margin-left: 0; }
+	 	input[type="submit"]{
+	 		margin-left: 0;
+	 		width: 100%;
+	 	}
+	}
+}

@@ -190,7 +190,7 @@ section{
         height: 63px;
         float: right;
         position: relative;
-        left: 60px;
+        left: 61px;
         border: 32px solid transparent;
         border-left: 29px solid rgba(0, 0, 0, 0.05);
       }
@@ -218,3 +218,5 @@ section{
     margin-bottom: 1em;
   }
 }
+
+@import "device";
