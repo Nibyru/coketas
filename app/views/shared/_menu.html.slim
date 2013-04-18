@@ -1,13 +1,9 @@
 .menu
   ul
-    = link_to root_path do
-      li Inicio
-    = link_to catalogo_path do
-      li Catálogo
-    = link_to stock_path do
-      li.stock Stock
-    = link_to contacto_path do
-      li Contacto
+    = link_to_menu("index")
+    = link_to_menu("catalogo")
+    = link_to_menu("stock")
+    = link_to_menu("contacto")
 
 .social
   a.facebook href="http://www.facebook.es" target="_blank"
