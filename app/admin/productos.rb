@@ -31,11 +31,11 @@ ActiveAdmin.register Producto do
         row :precio do |producto|
 	      number_to_currency producto.precio, :unit => "$", :format => "%u%n"
 	    end
-	    row :colors do |p|
-	    	(p.colors.map{ |c| c.nombre}).join(' ')
+	    row "Color" do |p|
+	    	(p.colors.map{ |c| c.nombre}).join(' , ')
 	    end
 	    row :talles do |p|
-	    	(p.talles.map{ |t| t.nombre }).join(' ')
+	    	(p.talles.map{ |t| t.nombre }).join(' , ')
 	    end
 
       end
