@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130415212333) do
+ActiveRecord::Schema.define(:version => 20130418012732) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -51,6 +51,14 @@ ActiveRecord::Schema.define(:version => 20130415212333) do
     t.integer "producto_id"
   end
 
+  create_table "colors_productos", :id => false, :force => true do |t|
+    t.integer "color_id"
+    t.integer "producto_id"
+  end
+
+  add_index "colors_productos", ["color_id"], :name => "index_colors_productos_on_color_id"
+  add_index "colors_productos", ["producto_id"], :name => "index_colors_productos_on_producto_id"
+
   create_table "marcas", :force => true do |t|
     t.string "nombre"
     t.text   "descripcion"
@@ -68,6 +76,14 @@ ActiveRecord::Schema.define(:version => 20130415212333) do
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
+
+  create_table "productos_talles", :id => false, :force => true do |t|
+    t.integer "producto_id"
+    t.integer "talle_id"
+  end
+
+  add_index "productos_talles", ["producto_id"], :name => "index_productos_talles_on_producto_id"
+  add_index "productos_talles", ["talle_id"], :name => "index_productos_talles_on_talle_id"
 
   create_table "talles", :force => true do |t|
     t.string  "nombre"
