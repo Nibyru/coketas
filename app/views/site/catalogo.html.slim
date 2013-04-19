@@ -6,55 +6,14 @@ section
 
     .lista_marcas
       ul
-        = link_to "#" do
-          li 
-            |Marca1
-            span
-        = link_to "#" do
-          li
-            |Marca2
-            span
-        = link_to "#" do
-          li
-            |Marca3
-            span
-        = link_to "#" do
-          li
-            |Marca4
-            span
-      
+        - @Marcas.each do |m|
+          = link_to catalogo_path(:id => m.id) do
+            li
+              = m.nombre
+              span
       img src=""
 
     .lista_fotos
-      = link_to asset_path("01.jpg"), :rel=>"lightbox-catalogo", :title => "te parto" do
-        = image_tag("01.jpg")
-      = link_to asset_path("02.jpg"), :rel=>"lightbox-catalogo" do
-        = image_tag("02.jpg")
-      = link_to asset_path("03.jpg"), :rel=>"lightbox-catalogo" do
-        = image_tag("03.jpg")
-      = link_to asset_path("04.jpg"), :rel=>"lightbox-catalogo" do
-        = image_tag("04.jpg")
-      = link_to asset_path("01.jpg"), :rel=>"lightbox-catalogo", :title => "te parto" do
-        = image_tag("01.jpg")
-      = link_to asset_path("02.jpg"), :rel=>"lightbox-catalogo" do
-        = image_tag("02.jpg")
-      = link_to asset_path("03.jpg"), :rel=>"lightbox-catalogo" do
-        = image_tag("03.jpg")
-      = link_to asset_path("04.jpg"), :rel=>"lightbox-catalogo" do
-        = image_tag("04.jpg")
-      = link_to asset_path("01.jpg"), :rel=>"lightbox-catalogo", :title => "te parto" do
-        = image_tag("01.jpg")
-      = link_to asset_path("02.jpg"), :rel=>"lightbox-catalogo" do
-        = image_tag("02.jpg")
-      = link_to asset_path("03.jpg"), :rel=>"lightbox-catalogo" do
-        = image_tag("03.jpg")
-      = link_to asset_path("04.jpg"), :rel=>"lightbox-catalogo" do
-        = image_tag("04.jpg")
-      = link_to asset_path("01.jpg"), :rel=>"lightbox-catalogo", :title => "te parto" do
-      	= image_tag("01.jpg")
-      = link_to asset_path("02.jpg"), :rel=>"lightbox-catalogo" do
-      	= image_tag("02.jpg")
-      = link_to asset_path("03.jpg"), :rel=>"lightbox-catalogo" do
-        = image_tag("03.jpg")
-      = link_to asset_path("04.jpg"), :rel=>"lightbox-catalogo" do
-      	= image_tag("04.jpg")
+      - @Productos.each do  |p|
+        = link_to asset_path(p.foto.path), :rel=>"lightbox-catalogo", :title => "#{p.nombre} - #{p.descripcion}" do
+           = image_tag(p.foto.url(:min))
