@@ -36,8 +36,19 @@
   text-shadow: 0px 0px 5px #0d1a3a;
 }
 
+#menu-btn {
+  width: 1.6em;
+  height: 1.7em;
+  background-image: url(/assets/icono.png);
+  background-position: -12px -114px;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+}
+
 .social{
   margin-top: 1.2em;
+  text-indent: 0;
   a{
     display: inline-block;
     margin-left: 1.6em;
@@ -51,4 +62,15 @@
   .google-plus:hover{  background-position: -49px -50px;  }
   .twitter{  background-position: -100px -1px;  }
   .twitter:hover{  background-position: -100px -50px;  }
+}
+#menu-btn, nav span{ display: none; }
+
+nav span{
+  width: 1.6em;
+  height: 1.7em;
+  background-image: url(/assets/icono.png);
+  background-position: -12px -152px;
+  position: absolute;
+  right: 1em;
+  top: 16.8em;
 }

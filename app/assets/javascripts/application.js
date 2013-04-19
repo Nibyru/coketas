@@ -12,3 +12,25 @@
 //
 //= require jquery
 //= require_tree .
+
+$(document).ready(function() {
+	if( document.documentElement.clientWidth < 767){
+	    $('header').insertAfter('nav');
+	}else{
+	    $('nav').insertAfter('header');
+	}
+
+	$(window).resize(function() {
+	    if( document.documentElement.clientWidth < 767){
+	        $('header').insertAfter('nav');
+	    }else{
+	        $('nav').insertAfter('header');
+	    }
+	});
+	$('#menu-btn, nav span').click(function() {
+        $('#menu-btn').slideToggle('slow');
+        $('nav ul').slideToggle('slow');
+        $('nav span').slideToggle('slow');
+    });
+
+})
