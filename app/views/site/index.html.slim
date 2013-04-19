@@ -3,9 +3,19 @@ nav
 
 section
   #slider
-  - @News.each do |n|
-    .item
-      = image_tag(n.foto.url(:medium))
-      .carrousel-caption
-        h1 = n.titulo
-        p = n.info
+    - @News.each do |n|
+      .item
+        = image_tag(n.foto.url(:medium))
+        .carrousel-caption
+          h1 = n.titulo
+          p = n.info
+      .item
+        = image_tag("01.jpg")
+      .item
+        = image_tag("02.jpg")
+      .item
+        = image_tag("03.jpg")
+      .item
+        = image_tag("04.jpg")
+      .item
+        = image_tag("05.jpg")
