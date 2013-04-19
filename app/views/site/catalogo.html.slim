@@ -6,23 +6,11 @@ section
 
     .lista_marcas
       ul
-        = link_to "#" do
-          li 
-            |Marca1
-            span
-        = link_to "#" do
-          li
-            |Marca2
-            span
-        = link_to "#" do
-          li
-            |Marca3
-            span
-        = link_to "#" do
-          li
-            |Marca4
-            span
-      
+        - @Marcas.each do |m|
+          = link_to "#" do
+            li
+              = m.nombre
+              span
       img src=""
 
     .lista_fotos
