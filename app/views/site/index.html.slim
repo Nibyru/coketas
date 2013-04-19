@@ -2,10 +2,10 @@ nav
   = render "shared/menu"
 
 section
-   #slider
-    - @News.each do |n|
-      .item
-        = image_tag(n.foto.url(:medium))
-        .carrousel-caption
-          h1 = n.titulo
-          p = n.info
+  #slider
+  - @News.each do |n|
+    .item
+      = image_tag(n.foto.url(:medium))
+      .carrousel-caption
+        h1 = n.titulo
+        p = n.info
