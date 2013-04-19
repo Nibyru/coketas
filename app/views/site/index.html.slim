@@ -3,19 +3,9 @@ nav
 
 section
    #slider
-    .item
-      = image_tag("00.jpg")
-      .carousel-caption
-        h1  Content Slide
-        p This slide has HTML content instead of an image
-        a href="#" class="success button" Click Me
-    .item
-      = image_tag("01.jpg")
-    .item
-      = image_tag("02.jpg")
-    .item
-      = image_tag("03.jpg")
-    .item
-      = image_tag("04.jpg")
-    .item
-      = image_tag("05.jpg")
+    - @News.each do |n|
+      .item
+        = image_tag(n.foto.url(:medium))
+        .carrousel-caption
+        = n.titulo
+        = n.info
