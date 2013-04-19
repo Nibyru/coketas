@@ -3,8 +3,12 @@ class SiteController < ApplicationController
 		@News = New.limit(5)
 	end
 
-	def catalogo 
-		@Productos = Producto.where(:marca_id => params[:id])
+	def catalogo
+		if params[:id] 
+			@Productos = Producto.where(:marca_id => params[:id])
+		else
+			@Productos = Producto.where(:marca_id => Marca.first.id)
+		end
 		@Marcas = Marca.all
 	end
 
