@@ -20,11 +20,14 @@
 	.container{
 		background: image-url("bg.png")!important;
 	}
+	header{
+		height: 15.79em;
+	}
 	nav, section{
 		display:block;
 		float: none!important;
 	}
-	.login, section, .menu ul, nav span{  display: none;  }
+	.login, .menu ul, nav span{  display: none;  }
 	#menu-btn{  display: block;  }
 	a.logo {
 		margin: auto;
@@ -53,6 +56,7 @@
 	}
 	section{
 		position: static;
+		margin:auto;
 	}
 	// Contacto
 	.contacto{
