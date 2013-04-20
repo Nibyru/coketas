@@ -6,4 +6,9 @@ ActiveAdmin.register Marca do
 		
 		default_actions
 	end
+
+	show do
+		row :nombre
+		row :descripcion
+	end
 end

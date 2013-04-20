@@ -5,4 +5,8 @@ ActiveAdmin.register Talle do
 
 		default_actions
 	end
+
+	show do
+		row :nombre
+	end
 end
