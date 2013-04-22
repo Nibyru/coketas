@@ -15,4 +15,4 @@ section
     .lista_fotos
       - @Productos.each do |p|
         = link_to p.foto.url, :rel=>"lightbox-catalogo", :title => "#{p.nombre} - #{p.descripcion}" do
-           = image_tag(p.foto.url(:min))
+           = image_tag(p.foto.url(:thumb))
