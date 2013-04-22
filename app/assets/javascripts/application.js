@@ -33,4 +33,22 @@ $(document).ready(function() {
         $('nav span').slideToggle('slow');
     });
 
+	$('#stock').dataTable( {
+		"sScrollY": "200px",
+		"bPaginate": false,
+		"aaSorting": [[ 4, "desc" ]],
+		"aoColumns": [
+			null,
+			{type: "select"},
+			null,
+			null,
+			null,
+			null
+		],
+		"oLanguage": {
+			"sSearch": "Filtrar",
+			"sZeroRecords": "No se encontraron coincidencias",
+			"sInfo": "_TOTAL_ entradas"
+		}
+	} );
 })

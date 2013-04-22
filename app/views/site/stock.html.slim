@@ -4,7 +4,7 @@ nav
 section
   .tabla-stock
     p Productos disponibles
-    table
+    table#stock
       thead
         tr
           th producto
@@ -14,12 +14,13 @@ section
           th stock
           th ver
       tbody
-        - @Productos.each do |p|
-          tr
-            td = p.codigo
-            td = Marca.find(p.marca_id).nombre
-            td = (p.colors.map{ |c| c.nombre}).join(' , ')
-            td = (p.talles.map{ |t| t.nombre }).join(' , ')
-            td = p.stock
-            td ver
+        - 20.times do
+          - @Productos.each do |p|
+            tr
+              td = p.codigo
+              td = Marca.find(p.marca_id).nombre
+              td = (p.colors.map{ |c| c.nombre}).join(' , ')
+              td = (p.talles.map{ |t| t.nombre }).join(' , ')
+              td = p.stock
+              td ver
           
