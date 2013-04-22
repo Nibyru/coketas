@@ -5,7 +5,7 @@ Coketas::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   root :to => 'site#index'
-  get 'catalogo(/:id)' => 'site#catalogo'
+  get 'catalogo(/:id)' => 'site#catalogo', :as => :catalogo
   get 'stock', :to => 'site#stock'
   get 'contacto', :to => 'site#contacto'
   # The priority is based upon order of creation:
