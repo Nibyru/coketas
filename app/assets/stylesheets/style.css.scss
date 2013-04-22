@@ -174,27 +174,11 @@ section #slider .caption {
   width: 30%;
   ul{
     margin:0;
-    li{
-      -webkit-transition: all 0s;
-      -moz-transition: all 0s;
-      -o-transition: all 0s;
-      -ms-transition: all 0s;
-      transition: all 0s;
-    }
-     li:hover{
-      width: 100%;
-      color: #000;
-      span {
-        background: transparent;
-        width: 49px;
-        height: 63px;
-        float: right;
-        position: relative;
-        left: 61px;
-        border: 32px solid transparent;
-        border-left: 29px solid rgba(0, 0, 0, 0.05);
-      }
-    }
+    text-indent: 6%;
+    a li{
+      font-size: 185%;
+      line-height: 2.3em;
+    } 
   }
   img {
     border: 1px solid;
