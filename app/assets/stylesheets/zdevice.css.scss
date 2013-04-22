@@ -6,7 +6,19 @@
 	}
 	footer a img { max-width: 16%; }
 	// Catálogo
-	.lista_marcas span{	display: none; }
+	
+	.lista_marcas{
+		ul a li{
+      		font-size: 158%;
+      		line-height: 2.8em;
+      		width: 110%;
+    	}
+    	ul a li:hover{
+      		width: 108%;
+    	}
+    	span{	display: none; } 
+  	}
+  
 	.lista_fotos img { width: 45.6%; }
 	// Contacto
 	.contacto {
@@ -15,7 +27,7 @@
 	}
 	.deco{ display:none; }
 }
-//mobile style
+//Mobile (Vista Horizontal)
 @media (max-width: 767px){
 	.container{
 		background: image-url("bg.png")!important;
@@ -57,11 +69,28 @@
 	section{
 		position: static;
 		margin:auto;
+		width: 90%;
+	}
+	// Inicio
+	.orbit-wrapper .orbit{ box-shadow: none;}
+	.orbit-wrapper .slider-nav{
+    	span.right, span.left { width:50em;}
+    }
+    section #slider{
+		height: 400px!important;
+	    .caption {
+		  position: static;
+		  background: rgba(0, 0, 0, 0.2);
+		  height: 100%;
+		  width: 100%;
+		  padding: 2%;
+		  color: white;
+		}
 	}
 	// Contacto
 	.contacto{
-		width: 124%;
-		margin-left: -2em;
+		width: 100%;
+		margin-left: 0%;
 		h2{ font-size:1.6em;}
 		label, input, textarea{ margin-top:0;}
 		label{ 
@@ -76,5 +105,23 @@
 	 		margin-left: 0;
 	 		width: 100%;
 	 	}
+	}
+	footer{
+		text-align: center;
+		a img{ 
+			max-width: 36%;
+			vertical-align: middle;
+		}
+		h1, a img{ position:static;}
+		h1{
+			margin-top: 2em;
+		}		
+	}
+}
+//Mobile 2(Posición Vertical)
+@media (max-width: 400px){
+	section{
+		margin-top: -6em;
+		#slider{ height: 296px!important;}
 	}
 }
