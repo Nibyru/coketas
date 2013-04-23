@@ -10,9 +10,9 @@ section
           = link_to catalogo_path(:id => m.id) do
             li
               = m.nombre
-      img src=""
+      = image_tag(@Marca_actual.foto.url(:normal))
 
     .lista_fotos
       - @Productos.each do |p|
-        = link_to p.foto.url, :rel=>"lightbox-catalogo", :title => "#{p.codigo} - #{p.nombre} - #{p.descripcion} - $#{p.precio}" do
+        = link_to p.foto.url, :rel=>"lightbox-catalogo", :title => "cod. #{p.codigo} - #{p.nombre} - #{p.descripcion} - $#{p.precio}" do
            = image_tag(p.foto.url(:thumb))

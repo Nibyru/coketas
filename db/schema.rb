@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130419180617) do
+ActiveRecord::Schema.define(:version => 20130423152843) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -60,8 +60,12 @@ ActiveRecord::Schema.define(:version => 20130419180617) do
   add_index "colors_productos", ["producto_id"], :name => "index_colors_productos_on_producto_id"
 
   create_table "marcas", :force => true do |t|
-    t.string "nombre"
-    t.text   "descripcion"
+    t.string   "nombre"
+    t.text     "descripcion"
+    t.string   "foto_file_name"
+    t.string   "foto_content_type"
+    t.integer  "foto_file_size"
+    t.datetime "foto_updated_at"
   end
 
   create_table "news", :force => true do |t|

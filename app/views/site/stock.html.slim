@@ -7,19 +7,19 @@ section
     table#stock
       thead
         tr
+          th código
           th producto
           th marca
           th color
           th talle
           th stock
-          th ver
       tbody
         - @Productos.each do |p|
           tr
             td = p.codigo
+            td = p.nombre
             td = Marca.find(p.marca_id).nombre
             td = (p.colors.map{ |c| c.nombre}).join(' , ')
             td = (p.talles.map{ |t| t.nombre }).join(' , ')
             td = p.stock
-            td ver
           
