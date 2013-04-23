@@ -10,7 +10,7 @@ section
           = link_to catalogo_path(:id => m.id) do
             li
               = m.nombre
-      = image_tag(@Marca_actual.foto.url(:normal))
+      = image_tag(@Marca_actual.foto.url(:standar))
 
     .lista_fotos
       - @Productos.each do |p|

@@ -6,5 +6,5 @@ class Marca < ActiveRecord::Base
   
   has_many :producto
 
-  has_attached_file :foto, :styles => { :normal => "224x168>"}
+  has_attached_file :foto, :styles => { :standar => "224x168>"}
 end

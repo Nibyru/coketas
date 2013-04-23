@@ -12,7 +12,7 @@ ActiveAdmin.register Marca do
         row :nombre
         row :descripcion
 		row :foto do
-        	image_tag(ad.foto.url(:normal))
+        	image_tag(ad.foto.url(:standar))
       	end
       end
       active_admin_comments
