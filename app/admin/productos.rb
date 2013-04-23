@@ -10,7 +10,7 @@ ActiveAdmin.register Producto do
 		column :codigo
 		column :nombre
 		column :marca, :sortable => :marca_id do |p|
-			Marca.find(p.marca_id).nombre
+			Marca.find(p.marca_id).nombre if Marca.find_by_id(p.marca_id) 
 		end
 		column :descripcion
 		column :stock
@@ -26,7 +26,7 @@ ActiveAdmin.register Producto do
         row :codigo
         row :nombre
         row :marca do |p|
-			Marca.find(p.marca_id).nombre
+			Marca.find(p.marca_id).nombre if Marca.find_by_id(p.marca_id)
 		end
         row :descripcion
         row :stock
@@ -65,7 +65,7 @@ ActiveAdmin.register Producto do
       	column :codigo
       	column :nombre
       	column :marca do |p|
-			Marca.find(p.marca_id).nombre
+			Marca.find(p.marca_id).nombre if Marca.find_by_id(p.marca_id)
 		end
       	column :stock
       	column :precio

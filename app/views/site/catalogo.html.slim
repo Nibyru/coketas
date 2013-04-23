@@ -2,17 +2,24 @@ nav
   = render "shared/menu"
 
 section
-  .catalogo
+  - if @Marcas && @Marca_actual
+      .catalogo
 
-    .lista_marcas
-      ul
-        - @Marcas.each do |m|
-          = link_to catalogo_path(:id => m.id) do
-            li
-              = m.nombre
-      = image_tag(@Marca_actual.foto.url(:standar))
+        .lista_marcas
+          ul
+            - @Marcas.each do |m|
+              = link_to catalogo_path(:id => m.id) do
+                li
+                  = m.nombre
+          = image_tag(@Marca_actual.foto.url(:standar))
 
-    .lista_fotos
-      - @Productos.each do |p|
-        = link_to p.foto.url, :rel=>"lightbox-catalogo", :title => "cod. #{p.codigo} - #{p.nombre} - #{p.descripcion} - $#{p.precio}" do
-           = image_tag(p.foto.url(:thumb))
+        .lista_fotos
+          - @Productos.each do |p|
+            = link_to p.foto.url, :rel=>"lightbox-catalogo", :title => "cod. #{p.codigo} - #{p.nombre} - #{p.descripcion} - $#{p.precio}" do
+               = image_tag(p.foto.url(:thumb))
+  -  else
+      .mensaje
+        h2 Todavia no cargaste ninguna marca
+        p
+        |Puedes cargarlas desde 
+        = link_to "aquí", admin_root_path
