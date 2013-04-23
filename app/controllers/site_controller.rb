@@ -15,6 +15,6 @@ class SiteController < ApplicationController
 	end
 
 	def stock
-		@Productos = Producto.all
+		@Productos = Producto.where("stock > 0")
 	end
 end

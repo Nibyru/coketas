@@ -18,7 +18,7 @@ section
           tr
             td = p.codigo
             td = p.nombre
-            td = Marca.find(p.marca_id).nombre
+            td = Marca.find(p.marca_id).nombre if Marca.find_by_id(p.marca_id)
             td = (p.colors.map{ |c| c.nombre}).join(' , ')
             td = (p.talles.map{ |t| t.nombre }).join(' , ')
             td = p.stock

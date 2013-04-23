@@ -2,10 +2,17 @@ nav
   = render "shared/menu"
 
 section
-  #slider
-    - @News.each do |n|
-      .item
-        = image_tag(n.foto.url(:medium))
-        .caption
-          h1 = n.titulo
-          p = n.info
+	- if @News.count != 0
+	  #slider
+	    - @News.each do |n|
+	      .item
+	        = image_tag(n.foto.url(:medium))
+	        .caption
+	          h1 = n.titulo
+	          p = n.info
+	- else
+      .mensaje
+        h2 Todavia no cargaste ninguna noticia
+        p
+        |Puedes cargarlas desde 
+        = link_to "aquí", admin_root_path
