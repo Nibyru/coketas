@@ -16,6 +16,6 @@ class Producto < ActiveRecord::Base
     :storage => :dropbox,
     :dropbox_credentials => "#{Rails.root}/config/dropbox.yml",
     :dropbox_options => {
-      :path => proc { |style| "#{style}/#{id}_#{foto.original_filename}" }
+      :path => proc { |style| "producto/#{style}/#{id}_#{foto.original_filename}" }
     }
 end
