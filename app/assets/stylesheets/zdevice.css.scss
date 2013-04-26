@@ -1,5 +1,5 @@
 //tablet style
-@media (max-width: 939px){
+@media (max-width: 970px){
 	.menu ul{ text-indent: 10%; }
 	.social{
 	  a{ margin-left: 0.5em; }
@@ -87,6 +87,27 @@
 		  color: white;
 		}
 	}
+	// Catálogo
+	.catalogo{ padding-top:0; }
+	.lista_marcas {
+    float: none;
+    width: 91%;
+    ul{ 
+    	text-indent: 0;
+    	height: auto;
+    	li{ text-align: center; }
+    }
+		img{ display: none;}
+  }
+  .lista_fotos{
+  	width: 100%;
+  	margin:auto;
+  	margin-top: 1em;
+  	img{ 
+  		width:100%; 
+  		margin-right: 0;
+  	}
+  }
 	// Contacto
 	.contacto{
 		width: 100%;
