@@ -1,7 +1,7 @@
 class Producto < ActiveRecord::Base
   attr_accessible :codigo, :color_ids, :descripcion, :marca_id, :nombre, :precio, :stock, :talle_ids, :foto
   
-  validates :codigo, :marca_id, :nombre, :precio, :stock, :foto, :presence => true
+  validates :codigo, :marca_id, :nombre, :stock, :foto, :presence => true
   validates :codigo, :uniqueness => true
 
   belongs_to :marca
@@ -12,7 +12,7 @@ class Producto < ActiveRecord::Base
   accepts_nested_attributes_for :colors
 
   has_attached_file :foto,
-  	:styles => { :medium => "624x458>", :thumb => "202x148>", :min => "100x85>" },
+  	:styles => { :medium => "624", :thumb => "202", :min => "100" },
     :storage => :dropbox,
     :dropbox_credentials => "#{Rails.root}/config/dropbox.yml",
     :dropbox_options => {
