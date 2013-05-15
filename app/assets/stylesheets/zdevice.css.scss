@@ -40,7 +40,7 @@
 		float: none!important;
 	}
 	.login, .menu ul, nav span{  display: none;  }
-	#menu-btn{  display: block;  }
+	#menu-btn{  display: block;	}
 	a.logo {
 		margin: auto;
 		width: 76%!important;
@@ -74,7 +74,10 @@
 	// Inicio
 	.orbit-wrapper .orbit{ box-shadow: none;}
 	.orbit-wrapper .slider-nav{
-    	span.right, span.left { width:50em;}
+    	span.right, span.left { 
+    		width:50em;
+    		top:30%;
+    	}
     }
     section #slider{
 		height: 400px!important;
@@ -85,8 +88,14 @@
 		  width: 100%;
 		  padding: 2%;
 		  color: white;
+		  h1{
+			font-size: 1.2em;
+			font-weight: bold;
+		  }
 		}
 	}
+
+
 	// Catálogo
 	.catalogo{ padding-top:0; }
 	.lista_marcas {
@@ -103,6 +112,8 @@
   	width: 100%;
   	margin:auto;
   	margin-top: 1em;
+  	height: auto;
+  	overflow:visible;
   	img{ 
   		width:100%; 
   		margin-right: 0;
@@ -143,6 +154,6 @@
 @media (max-width: 400px){
 	section{
 		margin-top: -6em;
-		#slider{ height: 296px!important;}
+		#slider{ height: auto;}
 	}
 }
