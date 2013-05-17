@@ -13,6 +13,7 @@ section
           th color
           th talle
           th stock
+          th ver
       tbody
         - @Productos.each do |p|
           tr
@@ -22,4 +23,6 @@ section
             td = (p.colors.order('nombre').map{ |c| c.nombre}).join(' , ')
             td = (p.talles.order('nombre').map{ |t| t.nombre }).join(' , ')
             td = p.stock
+            td = link_to p.foto.url, :rel=>"lightbox-catalogo", :title => "cod. #{p.codigo} - #{p.nombre} - #{p.descripcion} - $#{p.precio}" do
+               = image_tag(p.foto.url(:min))
           

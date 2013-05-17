@@ -49,13 +49,17 @@ nav .menu ul li{  text-indent: 17%;  }
 }
 
 #menu-btn {
-  width: 1.6em;
+  border:2px solid red;
   height: 1.7em;
-  background-image: url(/assets/icono.png);
-  background-position: -12px -114px;
+  width: 100%;
   position: absolute;
   right: 1em;
   top: 1em;
+  span{
+    width: 1.6em;
+    background-image: url(/assets/icono.png);
+    background-position: -12px -114px;    
+  }
 }
 
 .social{
