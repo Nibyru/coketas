@@ -1,10 +1,10 @@
 .menu
   #menu-btn
   ul
-    = link_to_menu("index")
-    = link_to_menu("catalogo")
-    = link_to_menu("stock")
-    = link_to_menu("contacto")
+    li = link_to "index", root_path
+    li = link_to "catalogo", catalogo_path
+    li = link_to "stock", stock_path
+    li = link_to "contacto", contacto_path
 
     .social
       a.facebook href="http://www.facebook.es" target="_blank"

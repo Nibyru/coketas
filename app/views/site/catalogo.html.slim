@@ -8,9 +8,8 @@ section
         .lista_marcas
           ul
             - @Marcas.each do |m|
-              = link_to catalogo_path(:id => m.id) do
-                li
-                  = m.nombre
+              li
+                = link_to m.nombre, catalogo_path(:id => m.id)
           = image_tag(@Marca_actual.foto.url(:standar))
 
         .lista_fotos
