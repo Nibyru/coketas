@@ -2,10 +2,14 @@
   #menu-btn
     span
   ul
-    li = link_to "index", root_path
-    li = link_to "catalogo", catalogo_path
-    li = link_to "stock", stock_path
-    li = link_to "contacto", contacto_path
+    li = link_to_unless_current "index", root_path do
+      p index
+    li = link_to_unless_current "catalogo", catalogo_path do
+      p catalogo
+    li = link_to_unless_current "stock", stock_path do
+      p stock
+    li = link_to_unless_current "contacto", contacto_path do
+      p contacto
 
     .social
       a.facebook href="http://www.facebook.es" target="_blank"

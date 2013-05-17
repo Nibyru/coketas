@@ -31,6 +31,15 @@ nav .menu, .lista_marcas{
         border-radius: 0;
         padding: 0.4em 0;
       }
+      p{
+        background: rgba(0,0,0,0.05);
+        height: 100%;
+        width: 102%;
+        font-size: 2em;
+        padding: 0.4em 0;
+        font-weight: bold;
+        text-transform: capitalize;
+      }
     }
     li:hover{
       width: 102%;
@@ -44,9 +53,6 @@ nav .menu, .lista_marcas{
   }
 }
 nav .menu ul li{  text-indent: 17%;  }
-.menu:hover{
-  text-shadow: 0px 0px 5px #0d1a3a;
-}
 
 #menu-btn {
   border:2px solid red;
