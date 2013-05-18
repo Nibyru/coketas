@@ -54,20 +54,20 @@ nav .menu, .lista_marcas{
 }
 nav .menu ul li{  text-indent: 17%;  }
 
-#menu-btn {
-  border:2px solid red;
+#menu-btn, #menu-btn-close {
   height: 1.7em;
   width: 100%;
   position: absolute;
   right: 1em;
   top: 1em;
+  margin-bottom: 2em;
   span{
     width: 1.6em;
     background-image: url(/assets/icono.png);
     background-position: -12px -114px;    
   }
 }
-
+#menu-btn-close span{  background-position: -12px -152px; }
 .social{
   margin-top: 1.2em;
   text-indent: 0;
@@ -85,14 +85,4 @@ nav .menu ul li{  text-indent: 17%;  }
   .twitter{  background-position: -100px -1px;  }
   .twitter:hover{  background-position: -100px -50px;  }
 }
-#menu-btn, nav span{ display: none; }
-
-nav span{
-  width: 1.6em;
-  height: 1.7em;
-  background-image: url(/assets/icono.png);
-  background-position: -12px -152px;
-  position: absolute;
-  right: 1em;
-  top: 16.8em;
-}
+#menu-btn, #menu-btn-close{ display: none; }

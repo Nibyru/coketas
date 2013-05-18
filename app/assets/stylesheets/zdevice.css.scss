@@ -39,8 +39,20 @@
 		display:block;
 		float: none!important;
 	}
-	.login, .menu ul, nav span{  display: none;  }
-	#menu-btn{  display: block;	}
+	.login, .menu ul, #menu-btn-close{  display: none;  }
+	#menu-btn{	display: block;  }
+	#menu-btn, #menu-btn-close{
+		span{
+			display: block;
+			margin:auto;
+			margin-top: 1.5%;
+			position:static;
+			height: 2em;
+		}
+		height: 2.7em;  
+		background-color:rgba(0,0,0,0.15);
+		position:static;	
+	}
 	a.logo {
 		margin: auto;
 		width: 76%!important;
@@ -49,15 +61,15 @@
 		ul{
 			height: auto;
 			margin-top: 0;
-			text-align: center;
 			background: rgba(0,0,0,0.09);
 			.stock{
 				display: none;
 			}
 			li{ 
-				text-indent: 0%;
+				a, p{  text-align: center!important;  }
+				text-indent: 0%!important;
 				line-height: 1.7em;
-				font-size: 2em;
+				font-size: 1em;
 			}
 		}
 	}

@@ -27,10 +27,10 @@ $(document).ready(function() {
 	        $('nav').insertAfter('header');
 	    }
 	});
-	$('#menu-btn, nav span').click(function() {
+	$('#menu-btn, #menu-btn-close').click(function() {
         $('#menu-btn').slideToggle('slow');
         $('nav ul').slideToggle('slow');
-        $('nav span').slideToggle('slow');
+        $('#menu-btn-close').slideToggle('slow');
     });
 
 	$('#stock').dataTable( {
