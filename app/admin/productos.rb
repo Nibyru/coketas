@@ -39,9 +39,6 @@ ActiveAdmin.register Producto do
 	    row :talles do |p|
 	    	(p.talles.map{ |t| t.nombre }).join(' , ')
 	    end
-		row :foto do
-        	image_tag(ad.foto.url(:medium))
-      	end
       end
       active_admin_comments
     end
@@ -56,7 +53,6 @@ ActiveAdmin.register Producto do
 	    f.input :precio
 	    f.input :talles, as: :check_boxes, :collection => Talle.all.map{ |t| [t.nombre, t.id] }
 	    f.input :colors, as: :check_boxes, :collection => Color.all.map{ |c| [c.nombre, c.id] }
-	  	f.input :foto
 	  end
 	  f.actions
 	end

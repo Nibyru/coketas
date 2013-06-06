@@ -23,6 +23,8 @@ section
             td = (p.colors.order('nombre').map{ |c| c.nombre}).join(' , ')
             td = (p.talles.order('nombre').map{ |t| t.nombre }).join(' , ')
             td = p.stock
-            td = link_to p.foto.url, :rel=>"lightbox", :title => "cod. #{p.codigo} - #{p.nombre} - #{p.descripcion} - $#{p.precio}" do
-               span.ver
+            td style="max-width: 100px"
+              - p.fotos.each do |f|
+                  = link_to f.imagen.url, :rel=>"lightbox-#{p.codigo}", :title => "cod. #{p.codigo} - #{p.nombre} - #{p.descripcion} - $#{p.precio}" do
+                      span.ver
           

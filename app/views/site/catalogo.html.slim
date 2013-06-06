@@ -14,8 +14,9 @@ section
 
         .lista_fotos
           - @Productos.each do |p|
-            = link_to p.foto.url, :rel=>"lightbox-catalogo", :title => "cod. #{p.codigo} - #{p.nombre} - #{p.descripcion} - $#{p.precio}" do
-               = image_tag(p.foto.url(:thumb))
+            - p.fotos.each do |f|
+                    = link_to f.imagen.url, :rel=>"lightbox-catalogo", :title => "cod. #{p.codigo} - #{p.nombre} - #{p.descripcion} - $#{p.precio}" do
+                        = image_tag(f.imagen.url(:thumb))
   -  else
       .mensaje
         h2 Todavía no cargaste ninguna marca
