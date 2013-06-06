@@ -17,4 +17,16 @@ class SiteController < ApplicationController
 	def stock
 		@Productos = Producto.where("stock > 0")
 	end
+
+	def send_mail
+		@contacto = Contacto.new(params[:contacto])
+		UserMailer.contact_confirmation(@contacto).deliver
+		if @contacto.save
+			flash[:notice] = "El e-mail se envio correctamente"
+			redirect_to root_path
+		else
+			flash[:notice] = "Debes completar los campos"
+			redirect_to contacto_path
+		end
+	end
 end

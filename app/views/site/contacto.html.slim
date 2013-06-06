@@ -2,20 +2,19 @@ nav
   = render "shared/menu"
 
 section
-  form.contacto
+  = form_for :contacto, url: { action: "contacto" }, html: {class: "contacto"} do |f|
     h1 Comentanos las dudas y sugerencias que tengas...
     h2 Gracias por ayudarnos a brindar un mejor servicio cada día.
-    label Nombre:
-    input type="text"
-    label E-mail:
-    input type="text"
-    label Teléfono:
-    input type="text"
-    label Dirección:
-    input type="text"
-    label Consulta:
-    textarea name="Consultas"
-    input type="submit" value="Enviar"
+    = f.label :nombre
+    = f.text_field :nombre, :required => true
+    = f.label :email
+    = f.email_field :email, :required => true
+    = f.label :telefono
+    = f.telephone_field :telefono
+    = f.label :direccion
+    = f.text_field :direccion
+    = f.label :consulta, :size => "60x12", :required => true
+    = f.text_area :consulta, :size => "60x12", :required => true
+    = f.submit "Create"
   .deco
     =image_tag("deco.gif")
-

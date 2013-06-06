@@ -8,6 +8,7 @@ Coketas::Application.routes.draw do
   get 'catalogo(/:id)' => 'site#catalogo', :as => :catalogo
   get 'stock', :to => 'site#stock'
   get 'contacto', :to => 'site#contacto'
+  post 'contacto', :to => 'site#send_mail'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

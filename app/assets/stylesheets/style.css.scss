@@ -118,6 +118,10 @@ section #slider .caption {
     font-weight: normal;
     margin-left: 2.4em;
   }
+     
+  input:required, textarea:required {
+    box-shadow: 0px 0px 6px 1px #FCB6FA;
+  }
 }
 
 .deco{
