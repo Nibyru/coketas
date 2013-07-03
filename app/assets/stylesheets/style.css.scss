@@ -123,7 +123,20 @@ section #slider .caption {
     box-shadow: 0px 0px 6px 1px #FCB6FA;
   }
 }
-
+#notice {
+  background: rgba(252, 182, 250, 0.38);
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  border-bottom: 2px solid #FCB6FA;
+  box-shadow: 0px 0px 10px #999;
+}
+#notice:hover {
+  opacity: 0.3;
+}
 .deco{
   float: right;
 }
