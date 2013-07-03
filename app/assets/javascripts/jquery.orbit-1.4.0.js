@@ -25,7 +25,7 @@
       timer: true,                      // display timer?
       advanceSpeed: 4000,               // if timer is enabled, time between transitions
       pauseOnHover: false,              // if you hover pauses the slider
-      startClockOnMouseOut: false,      // if clock should start on MouseOut
+      startClockOnMouseOut: true,      // if clock should start on MouseOut
       startClockOnMouseOutAfter: 1000,  // how long after MouseOut should the timer start again
       directionalNav: true,             // manual advancing directional navs
       directionalNavRightText: 'Right', // text of right directional element for accessibility
@@ -33,7 +33,7 @@
       captions: true,                   // do you want captions?
       captionAnimation: 'fade',         // fade, slideOpen, none
       captionAnimationSpeed: 600,       // if so how quickly should they animate in
-      resetTimerOnClick: false,         // true resets the timer instead of pausing slideshow progress on manual navigation
+      resetTimerOnClick: true,         // true resets the timer instead of pausing slideshow progress on manual navigation
       bullets: false,                   // true or false to activate the bullet navigation
       bulletThumbs: false,              // thumbnails for the bullets
       bulletThumbLocation: '',          // relative path to thumbnails from this file
@@ -44,7 +44,7 @@
       centerBullets: true,              // center bullet nav with js, turn this off if you want to position the bullet nav manually
       singleCycle: false,               // cycles through orbit slides only once
       slideNumber: false,               // display slide numbers?
-      stackOnSmall: false               // stack slides on small devices (i.e. phones)
+      stackOnSmall: true               // stack slides on small devices (i.e. phones)
     },
 
     activeSlide: 0,
