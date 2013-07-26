@@ -1,9 +1,8 @@
 ActionMailer::Base.smtp_settings = {
-  :address              => "smtp.gmail.com",
-  :port                 => 587,
-  :domain               => "prueba-coketas.herokuapp.com",
-  :user_name            => "sarriagada87@gmail.com",
-  :password             => "yosoymuyfeliz",
-  :authentication       => "plain",
-  :enable_starttls_auto => true
+  address:              'smtp.mandrillapp.net',
+  port:                 '587',
+  authentication:       :plain,
+  user_name:            ENV['MANDRIL_USERNAME'],
+  password:             ENV['MANDRIL_PASSWORD'],
+  enable_starttls_auto: true
 }
