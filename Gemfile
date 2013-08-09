@@ -10,18 +10,19 @@ end
 
 group :test, :development do
   gem 'sqlite3'
-  gem "better_errors"
+  gem 'better_errors'
 end
 
 group :production do
   gem 'pg', "~> 0.14.1"
 end
 
+gem 'newrelic_rpm'
 gem 'jquery-rails'
 gem 'slim'
 gem 'rails-i18n'
 gem 'activeadmin'
-gem "meta_search",    '>= 1.1.0.pre'
-gem "paperclip",            '3.3.1'
+gem 'meta_search',    '>= 1.1.0.pre'
+gem 'paperclip',            '3.3.1'
 gem 'paperclip-dropbox'
 gem 'taps'
