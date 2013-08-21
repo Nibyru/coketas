@@ -19,6 +19,7 @@ class SiteController < ApplicationController
 	end
 
 	def send_mail
+		UserMailer.default_url_options[:host] = request.host_with_port
 		@contacto = Contacto.new(params[:contacto])
 		UserMailer.contact_confirmation(@contacto).deliver
 		if @contacto.save
