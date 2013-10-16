@@ -11,7 +11,7 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
-//= require jquery.turbolinks
+//= require turbolinks
 //= require_tree .
 
 $(document).ready(function() {
