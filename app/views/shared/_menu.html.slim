@@ -2,7 +2,7 @@
   #menu-btn
     span
   ul
-    li = link_to_unless_current "inicio", root_path do
+    li = link_to_unless_current "inicio", root_path, "data-no-turbolink" => "" do
       p inicio
     li = link_to_unless_current "catalogo", catalogo_path do
       p catalogo
